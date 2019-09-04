@@ -8,7 +8,7 @@
           href="https://vuejs.org"
           target="_blank"
         >
-          {{ name }}
+          \{{ name }}
         </a>
       </li>
       <li>
