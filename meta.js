@@ -133,43 +133,43 @@ module.exports = {
       type: 'confirm',
       message: 'Setup e2e tests with Nightwatch?',
     },
-    // autoInstall: {
-    //   when: 'isNotTest',
-    //   type: 'list',
-    //   message:
-    //     'Should we run `npm install` for you after the project has been created? (recommended)',
-    //   choices: [
-    //     {
-    //       name: 'Yes, use NPM',
-    //       value: 'npm',
-    //       short: 'npm',
-    //     },
-    //     {
-    //       name: 'Yes, use Yarn',
-    //       value: 'yarn',
-    //       short: 'yarn',
-    //     },
-    //     {
-    //       name: 'No, I will handle that myself',
-    //       value: false,
-    //       short: 'no',
-    //     },
-    //   ],
-    // },
+    autoInstall: {
+      when: 'isNotTest',
+      type: 'list',
+      message:
+        'Should we run `npm install` for you after the project has been created? (recommended)',
+      choices: [
+        {
+          name: 'Yes, use NPM',
+          value: 'npm',
+          short: 'npm',
+        },
+        {
+          name: 'Yes, use Yarn',
+          value: 'yarn',
+          short: 'yarn',
+        },
+        {
+          name: 'No, I will handle that myself',
+          value: false,
+          short: 'no',
+        },
+      ],
+    },
   },
   filters: {
-    // '.eslintrc.js': 'lint',
-    // '.eslintignore': 'lint',
-    // 'config/test.env.js': 'unit || e2e',
-    // 'build/webpack.test.conf.js': "unit && runner === 'karma'",
-    // 'test/unit/**/*': 'unit',
-    // 'test/unit/index.js': "unit && runner === 'karma'",
-    // 'test/unit/jest.conf.js': "unit && runner === 'jest'",
-    // 'test/unit/karma.conf.js': "unit && runner === 'karma'",
-    // 'test/unit/specs/index.js': "unit && runner === 'karma'",
-    // 'test/unit/setup.js': "unit && runner === 'jest'",
-    // 'test/e2e/**/*': 'e2e',
-    // 'src/router/**/*': 'router',
+    '.eslintrc.js': 'lint',
+    '.eslintignore': 'lint',
+    'config/test.env.js': 'unit || e2e',
+    'build/webpack.test.conf.js': "unit && runner === 'karma'",
+    'test/unit/**/*': 'unit',
+    'test/unit/index.js': "unit && runner === 'karma'",
+    'test/unit/jest.conf.js': "unit && runner === 'jest'",
+    'test/unit/karma.conf.js': "unit && runner === 'karma'",
+    'test/unit/specs/index.js': "unit && runner === 'karma'",
+    'test/unit/setup.js': "unit && runner === 'jest'",
+    'test/e2e/**/*': 'e2e',
+    'src/router/**/*': 'router',
   },
   complete: function(data, { chalk }) {
     const green = chalk.green
