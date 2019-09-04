@@ -16,7 +16,7 @@
           href="https://forum.vuejs.org"
           target="_blank"
         >
-          Forum
+          \\{{ name }}
         </a>
       </li>
       <li>
