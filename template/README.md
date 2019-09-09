@@ -1,36 +1,15 @@
 # {{ name }}
 
-> {{ description }}
+自定义模板项目
 
-## Build Setup
+{{#fruit}}
+这就是一个水果
+{{/fruit}}
 
-``` bash
-# install dependencies
-npm install
+{{#if_eq species 'apple'}}
+苹果
+{{/if_eq}}
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-{{#unit}}
-
-# run unit tests
-npm run unit
-{{/unit}}
-{{#e2e}}
-
-# run e2e tests
-npm run e2e
-{{/e2e}}
-{{#if_or unit e2e}}
-
-# run all tests
-npm test
-{{/if_or}}
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+{{#if_eq species 'banana'}}
+香蕉
+{{/if_eq}}
