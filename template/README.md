@@ -1,7 +1,7 @@
 # {{ name }}
 
 自定义模板项目
-{{#template_name name}}{{/if_eq}}
+{{#template_name name}}{{/template_name}}
 
 {{#fruit}}
 这就是一个水果
