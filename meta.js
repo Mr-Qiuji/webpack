@@ -30,6 +30,10 @@ module.exports = {
     template_version() {
       return templateVersion
     },
+
+    template_name(name) {
+      return templateVersion + name
+    }
   },
   
   prompts: {
